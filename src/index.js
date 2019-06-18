@@ -1,4 +1,5 @@
 'use strict'
+//import "@babel/polyfill";
 
 let root = document.getElementById('root');
 let ele = document.createElement('ul');
