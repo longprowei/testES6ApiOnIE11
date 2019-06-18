@@ -21,11 +21,13 @@ for (let i = 0; i < 10; i++) {
 let testPromise = new Promise((resolve, reject) => {
     setTimeout(() => {
         resolve('foo');
-    }, 3000);
+    }, 1000);
 });
 
 testPromise.then(value => {
-    console.log(value);
+    let sentence = document.createElement('div');
+    sentence.appendChild(document.createTextNode(`Promise solved: ${value}`));
+    root.appendChild(sentence);
 })
 
 
